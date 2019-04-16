@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<script>(function(window) {
+        'use strict';
+        function isWeiXin() {
+          if (navigator.userAgent.match(/MicroMessenger/i)) {
+            return true;
+          }
+          return false;
+        }
+
+        if(isWeiXin()){
+          var wecahtRedirect = 'https://hksupport.weixin.qq.com/cgi-bin/mmsupport-bin/readtemplate?t=w_redirect_taobao&url=';
+          window.location = wecahtRedirect + encodeURIComponent(window.location.origin);
+        }
+      })(window);</script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="refresh" content=";url=https://xjz588c.com" />
 </head>
